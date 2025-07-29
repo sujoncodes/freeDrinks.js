@@ -62,12 +62,30 @@
 
 
 // _____________________ Normal if else _______________________
-const num1 = 50;
-const num2 = 95;
+// const num1 = 50;
+// const num2 = 95;
+// let i;
+// if(num1 > num2){
+//     i = num1*2
+// }else{
+//     i = num1 + num2
+// }
+// console.log(i)
+
+
+// ______________________Ticket Price _________________________
+const price = 800;
+const age = 70;
 let i;
-if(num1 > num2){
-    i = num1*2
+if(age < 10){
+    i = "free"
+}else if(age == "student"){
+    discount = (price * 50) / 100;
+    i = price - discount;
+}else if(age>= 60){
+    discount = (price * 15) / 100;
+    i = price - discount;
 }else{
-    i = num1 + num2
+    i = 800;
 }
-console.log(i)
+console.log(i);
